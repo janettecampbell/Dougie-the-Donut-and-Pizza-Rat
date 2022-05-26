@@ -3,12 +3,15 @@ const brooklyn = document.querySelector("#brooklyn");
 const manhattan = document.querySelector("#manhattan");
 const queens = document.querySelector("#queens");
 const statenIsland = document.querySelector("#staten-island");
+const crimes = document.getElementById("crimes").value;
 
-let limit = 10;
-let borough = "BROOKLYN";
+console.log(crimes);
+
+let limit = crimes;
 
 bronx.addEventListener("click", (e) => {
   e.preventDefault();
+  console.log(limit);
   fetch(
     `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=BRONX&$limit=${limit}`
   )
