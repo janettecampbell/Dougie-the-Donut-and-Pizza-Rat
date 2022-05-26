@@ -14,12 +14,14 @@ bronx.addEventListener("click", (e) => {
     .then((response) => response.json())
     .then((json) => {
       for (let i = 0; i < json.length; i++) {
-        console.log(
-          "complaint_type: " +
-            json[i].complaint_type +
-            " resolution_description: " +
-            json[i].resolution_description
-        );
+        const divComplaint = document.createElement("div");
+        const divResolution = document.createElement("div");
+        divComplaint.className = "complaint";
+        divResolution.className = "resolution";
+        result.appendChild(divComplaint);
+        result.appendChild(divResolution);
+        divComplaint.textContent = json[i].complaint_type;
+        divResolution.textContent = json[i].resolution_description;
       }
     })
     .catch((error) => console.log(error));
@@ -33,12 +35,14 @@ brooklyn.addEventListener("click", (e) => {
     .then((response) => response.json())
     .then((json) => {
       for (let i = 0; i < json.length; i++) {
-        console.log(
-          "complaint_type: " +
-            json[i].complaint_type +
-            " resolution_description: " +
-            json[i].resolution_description
-        );
+        const divComplaint = document.createElement("div");
+        const divResolution = document.createElement("div");
+        divComplaint.className = "complaint";
+        divResolution.className = "resolution";
+        result.appendChild(divComplaint);
+        result.appendChild(divResolution);
+        divComplaint.textContent = json[i].complaint_type;
+        divResolution.textContent = json[i].resolution_description;
       }
     })
     .catch((error) => console.log(error));
@@ -52,12 +56,14 @@ manhattan.addEventListener("click", (e) => {
     .then((response) => response.json())
     .then((json) => {
       for (let i = 0; i < json.length; i++) {
-        console.log(
-          "complaint_type: " +
-            json[i].complaint_type +
-            " resolution_description: " +
-            json[i].resolution_description
-        );
+        const divComplaint = document.createElement("div");
+        const divResolution = document.createElement("div");
+        divComplaint.className = "complaint";
+        divResolution.className = "resolution";
+        result.appendChild(divComplaint);
+        result.appendChild(divResolution);
+        divComplaint.textContent = json[i].complaint_type;
+        divResolution.textContent = json[i].resolution_description;
       }
     })
     .catch((error) => console.log(error));
@@ -71,12 +77,14 @@ queens.addEventListener("click", (e) => {
     .then((response) => response.json())
     .then((json) => {
       for (let i = 0; i < json.length; i++) {
-        console.log(
-          "complaint_type: " +
-            json[i].complaint_type +
-            " resolution_description: " +
-            json[i].resolution_description
-        );
+        const divComplaint = document.createElement("div");
+        const divResolution = document.createElement("div");
+        divComplaint.className = "complaint";
+        divResolution.className = "resolution";
+        result.appendChild(divComplaint);
+        result.appendChild(divResolution);
+        divComplaint.textContent = json[i].complaint_type;
+        divResolution.textContent = json[i].resolution_description;
       }
     })
     .catch((error) => console.log(error));
@@ -90,12 +98,14 @@ statenIsland.addEventListener("click", (e) => {
     .then((response) => response.json())
     .then((json) => {
       for (let i = 0; i < json.length; i++) {
-        console.log(
-          "complaint_type: " +
-            json[i].complaint_type +
-            " resolution_description: " +
-            json[i].resolution_description
-        );
+        const divComplaint = document.createElement("div");
+        const divResolution = document.createElement("div");
+        divComplaint.className = "complaint";
+        divResolution.className = "resolution";
+        result.appendChild(divComplaint);
+        result.appendChild(divResolution);
+        divComplaint.textContent = json[i].complaint_type;
+        divResolution.textContent = json[i].resolution_description;
       }
     })
     .catch((error) => console.log(error));
