@@ -3,17 +3,12 @@ const brooklyn = document.querySelector("#brooklyn");
 const manhattan = document.querySelector("#manhattan");
 const queens = document.querySelector("#queens");
 const statenIsland = document.querySelector("#staten-island");
-const crimes = document.getElementById("crimes").value;
-
-console.log(crimes);
-
-let limit = crimes;
+const limit = document.getElementById("limit");
 
 bronx.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log(limit);
   fetch(
-    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=BRONX&$limit=${limit}`
+    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=BRONX&$limit=${limit.value}`
   )
     .then((response) => response.json())
     .then((json) => console.log(json))
@@ -23,7 +18,7 @@ bronx.addEventListener("click", (e) => {
 brooklyn.addEventListener("click", (e) => {
   e.preventDefault();
   fetch(
-    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=BROOKLYN&$limit=${limit}`
+    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=BROOKLYN&$limit=${limit.value}`
   )
     .then((response) => response.json())
     .then((json) => console.log(json))
@@ -33,7 +28,7 @@ brooklyn.addEventListener("click", (e) => {
 manhattan.addEventListener("click", (e) => {
   e.preventDefault();
   fetch(
-    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=MANHATTAN&$limit=${limit}`
+    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=MANHATTAN&$limit=${limit.value}`
   )
     .then((response) => response.json())
     .then((json) => console.log(json))
@@ -43,7 +38,7 @@ manhattan.addEventListener("click", (e) => {
 queens.addEventListener("click", (e) => {
   e.preventDefault();
   fetch(
-    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=QUEENS&$limit=${limit}`
+    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=QUEENS&$limit=${limit.value}`
   )
     .then((response) => response.json())
     .then((json) => console.log(json))
@@ -53,7 +48,7 @@ queens.addEventListener("click", (e) => {
 statenIsland.addEventListener("click", (e) => {
   e.preventDefault();
   fetch(
-    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=STATEN%20ISLAND&$limit=${limit}`
+    `https://data.cityofnewyork.us/resource/erm2-nwe9.json?&agency=NYPD&borough=STATEN%20ISLAND&$limit=${limit.value}`
   )
     .then((response) => response.json())
     .then((json) => console.log(json))
