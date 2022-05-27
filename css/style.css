@@ -1,17 +1,13 @@
 body{
     background-image: url("https://wallpapercave.com/wp/wp4924795.jpg");
     background-repeat: no-repeat;
-   display: block;
-   margin-left: 150px ;
-
+    display: block;
+    margin-left: 150px ;
+    
 }
 .wrapper{
     color: white;
     text-shadow: 2px 2px 8px black;
     font-family: Arial, Helvetica, sans-serif;
     width: 80%;
-
-}
-img{
-    margin: 0 auto;
 }
