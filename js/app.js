@@ -46,6 +46,10 @@ const createDivs = (json) => {
     toggleBtn.textContent = "What did the police do?";
     divComplaint.textContent = json[i].complaint_type;
     divResolution.textContent = json[i].resolution_description;
+
+    toggleBtn.addEventListener("click", ( => {
+        
+    }))
   }
 };
 
