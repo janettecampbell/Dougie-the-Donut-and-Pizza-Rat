@@ -7,17 +7,21 @@
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
+    <img src="http://www.nyc.gov/html/nypd/includes/site_images/branding/nypd_header.jpg">
   </head>
   <body>
-    <form>
-      <h1>Where can we cause trouble today?</h1>
-      <button id="bronx">BRONX</button>
-      <button id="brooklyn">BROOKLYN</button>
-      <button id="manhattan">MANHATTAN</button>
-      <button id="queens">QUEENS</button>
-      <button id="staten island">STATEN ISLAND</button>
-      <label for="title">Search for # of Crimes:</label>
-      <input type="text" name="Crimes" />
-    </form>
+    <div class="wrapper">
+      <form>
+        <h1>Where can we cause trouble today?</h1>
+        <button id="bronx">BRONX</button>
+        <button id="brooklyn">BROOKLYN</button>
+        <button id="manhattan">MANHATTAN</button>
+        <button id="queens">QUEENS</button>
+        <button id="staten-island">STATEN ISLAND</button>
+        <label for="title">Search for # of Crimes:</label>
+        <input type="number" name="crimes" id="limit" value="10" />
+      </form>
+      <div class="result"></div>
+    </div>
   </body>
 </html>
