@@ -15,12 +15,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   width: 60%;
-  margin: 0 auto;
+  margin-top: 55px;
+  margin-left: 365px;
   background-color: rgba(0, 0, 0, 0.404);
   outline-style: solid;
   outline-color: rgb(238, 216, 16);
   outline-width: 3px;
-  padding: 0 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 img {
