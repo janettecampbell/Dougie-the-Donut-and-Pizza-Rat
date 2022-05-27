@@ -46,10 +46,13 @@ const createDivs = (json) => {
     toggleBtn.textContent = "What did the police do?";
     divComplaint.textContent = json[i].complaint_type;
     divResolution.textContent = json[i].resolution_description;
-
-    toggleBtn.addEventListener("click", ( => {
-        
-    }))
+    toggleBtn.addEventListener("click", () => {
+      if (divResolution.style.display === "none") {
+        divResolution.style.display = "block";
+      } else {
+        divResolution.style.display = "none";
+      }
+    });
   }
 };
 
