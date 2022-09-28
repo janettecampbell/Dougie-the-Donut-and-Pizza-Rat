@@ -39,6 +39,8 @@ const createDivs = (json) => {
     divComplaint.className = "complaint";
     divResolution.className = "resolution";
 
+    divResolution.style.display = "none";
+
     result.appendChild(divComplaint);
     result.appendChild(divResolution);
     result.appendChild(toggleBtn);
