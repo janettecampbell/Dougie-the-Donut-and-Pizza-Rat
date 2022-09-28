@@ -58,6 +58,39 @@ const createDivs = (json) => {
   }
 };
 
+const createDivsNon = (json) => {
+  const isFilled = document.getElementsByClassName("complaint");
+  if (isFilled.length > 0) {
+    clear();
+  }
+  for (let i = 0; i < json.length; i++) {
+    // const toggleBtn = document.createElement("button");
+    const divComplaint = document.createElement("div");
+    // const divResolution = document.createElement("div");
+
+    // toggleBtn.className = "toggle-btn";
+    divComplaint.className = "complaint";
+    // divResolution.className = "resolution";
+
+    // divResolution.style.display = "none";
+
+    result.appendChild(divComplaint);
+    // result.appendChild(divResolution);
+    // result.appendChild(toggleBtn);
+
+    // toggleBtn.textContent = "What did the police do?";
+    divComplaint.textContent = json[i].complaint_type;
+    // divResolution.textContent = json[i].resolution_description;
+    // toggleBtn.addEventListener("click", () => {
+    //   if (divResolution.style.display === "none") {
+    //     divResolution.style.display = "block";
+    //   } else {
+    //     divResolution.style.display = "none";
+    //   }
+    // });
+  }
+};
+
 bronx.addEventListener("click", (e) => {
   e.preventDefault();
   fetch(
@@ -65,7 +98,7 @@ bronx.addEventListener("click", (e) => {
   )
     .then((response) => response.json())
     .then((json) => {
-      createDivs(json);
+      createDivsNon(json);
     })
     .catch((error) => console.log(error));
 });
@@ -77,7 +110,7 @@ brooklyn.addEventListener("click", (e) => {
   )
     .then((response) => response.json())
     .then((json) => {
-      createDivs(json);
+      createDivsNon(json);
     })
     .catch((error) => console.log(error));
 });
@@ -89,7 +122,7 @@ manhattan.addEventListener("click", (e) => {
   )
     .then((response) => response.json())
     .then((json) => {
-      createDivs(json);
+      createDivsNon(json);
     })
     .catch((error) => console.log(error));
 });
@@ -101,7 +134,7 @@ queens.addEventListener("click", (e) => {
   )
     .then((response) => response.json())
     .then((json) => {
-      createDivs(json);
+      createDivsNon(json);
     })
     .catch((error) => console.log(error));
 });
