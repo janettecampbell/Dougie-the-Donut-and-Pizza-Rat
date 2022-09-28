@@ -34,6 +34,12 @@ form {
   margin: 0 auto;
 }
 
+#statement {
+  font-size: 0.75em;
+  line-height: 2.5;
+  color: #fff;
+}
+
 img {
   display: block;
   margin: 0 auto;
